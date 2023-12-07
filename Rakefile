@@ -6,3 +6,5 @@ task :test do
   require 'test/unit'
   Dir.glob('test/*_test.rb').each { |file| require file }
 end
+
+task default: %i[test]
