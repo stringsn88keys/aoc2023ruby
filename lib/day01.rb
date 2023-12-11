@@ -1,4 +1,5 @@
-class Day01
+require 'day'
+class Day01 < Day
   WORDGITS=%w(o1ne t2wo th3ree fo4ur fi5ve si6x sev7en eig8ht ni9ne)
   WORDGITSMAP=Hash[WORDGITS.map { |w| [w.gsub(/\d/,''), w] }]
 
@@ -18,12 +19,6 @@ class Day01
         result.gsub(wordgitkv[0], wordgitkv[1])
       end
     end
-  end
-
-  attr_reader :input
-
-  def initialize(input)
-    @input = input
   end
 
   def part1
