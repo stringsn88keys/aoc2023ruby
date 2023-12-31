@@ -28,7 +28,7 @@ INPUT
     { 5 => "+", 7 => "58" },
     { 2 => "592" },
     { 6 => "755" },
-    { 3 => "*", 5 => "$" },
+    { 3 => "$", 5 => "*" },
     { 1 => "664", 5 => "598" }
   ]
 
@@ -39,14 +39,14 @@ INPUT
   end
 
   def test_part1
-    input = App.load_input(day: 1, suffix: "part1sample")
-    result = Day01.new(input).part1
+    input = App.load_input(day: 3, suffix: "part1sample")
+    result = Day03.new(input).part1
     assert_equal("142", result)
   end
 
   def test_part2
-    input = App.load_input(day: 1, suffix: "part2sample")
-    result = Day01.new(input).part2
+    input = App.load_input(day: 3, suffix: "part2sample")
+    result = Day03.new(input).part2
     assert_equal("281", result)
   end
 end
