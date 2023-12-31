@@ -4,6 +4,7 @@ GEM
     colorize (1.1.0)
 
 PLATFORMS
+  arm64-darwin-20
   arm64-darwin-22
 
 DEPENDENCIES
